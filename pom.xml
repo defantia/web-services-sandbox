@@ -25,7 +25,9 @@
 	</properties>
 
 	<modules>
+		<!-- <module>jaxws-service-with-pojo</module> -->
 		<module>jaxws-service-with-ejb</module>
+		<module>jaxws-service-with-cxf</module>
 	</modules>
 
 	<issueManagement>
