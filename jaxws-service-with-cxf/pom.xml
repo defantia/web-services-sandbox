@@ -12,7 +12,7 @@
 	<artifactId>jaxws-service-with-cxf</artifactId>
 	<packaging>war</packaging>
 
-	<name>Simple CXF web service</name>
+	<name>Simple JAX-WS CXF web service</name>
 
 	<properties>
 		<!-- maven dependencies versions -->
