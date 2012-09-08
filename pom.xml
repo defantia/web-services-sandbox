@@ -16,12 +16,17 @@
 		<project.build.sourceencoding>UTF-8</project.build.sourceencoding>
 		<!-- maven plugins versions -->
 		<jaxws-maven-plugin.version>1.12</jaxws-maven-plugin.version>
-		<maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+		<maven-clean-plugin.version>2.5</maven-clean-plugin.version>
+		<maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
 		<maven-ejb-plugin.version>2.3</maven-ejb-plugin.version>
+		<maven-war-plugin.version>2.2</maven-war-plugin.version>
 		<!-- maven dependencies versions -->
 		<ejb.version>3.0</ejb.version>
+		<fest-assert.version>1.4</fest-assert.version>
 		<javaee-api.version>5</javaee-api.version>
 		<junit.version>4.10</junit.version>
+		<!-- <openejb-ejbd.version>3.1.4</openejb-ejbd.version> -->
+		<openejb-ejbd.version>4.0.0</openejb-ejbd.version>
 	</properties>
 
 	<modules>
@@ -52,6 +57,11 @@
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>${maven-clean-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven-compiler-plugin.version}</version>
 				</plugin>
@@ -62,6 +72,11 @@
 					<configuration>
 						<ejbVersion>${ejb.version}</ejbVersion>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>${maven-war-plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -80,6 +95,7 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- JavaEE -->
 			<dependency>
 				<groupId>javax.ejb</groupId>
 				<artifactId>ejb-api</artifactId>
@@ -92,10 +108,32 @@
 				<version>${javaee-api.version}</version>
 				<scope>provided</scope>
 			</dependency>
+			<!-- dependencies with scope test -->
+			<!-- JUnit -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- OpenEJB embedded -->
+			<dependency>
+				<groupId>org.apache.openejb</groupId>
+				<artifactId>openejb-ejbd</artifactId>
+				<version>${openejb-ejbd.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>hsqldb</groupId>
+						<artifactId>hsqldb</artifactId>
+					</exclusion>
+				</exclusions>
+				<scope>test</scope>
+			</dependency>
+			<!-- FEST Fluent Assertions -->
+			<dependency>
+				<groupId>org.easytesting</groupId>
+				<artifactId>fest-assert</artifactId>
+				<version>${fest-assert.version}</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
