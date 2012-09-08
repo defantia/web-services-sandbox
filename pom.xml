@@ -15,18 +15,20 @@
 		<maven.compiler.target>1.6</maven.compiler.target>
 		<project.build.sourceencoding>UTF-8</project.build.sourceencoding>
 		<!-- maven plugins versions -->
+		<findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
 		<jaxws-maven-plugin.version>1.12</jaxws-maven-plugin.version>
 		<maven-clean-plugin.version>2.5</maven-clean-plugin.version>
 		<maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
 		<maven-ejb-plugin.version>2.3</maven-ejb-plugin.version>
+		<maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
 		<maven-war-plugin.version>2.2</maven-war-plugin.version>
 		<!-- maven dependencies versions -->
 		<ejb.version>3.0</ejb.version>
 		<fest-assert.version>1.4</fest-assert.version>
 		<javaee-api.version>5</javaee-api.version>
 		<junit.version>4.10</junit.version>
-		<!-- <openejb-ejbd.version>3.1.4</openejb-ejbd.version> -->
-		<openejb-ejbd.version>4.0.0</openejb-ejbd.version>
+		<!-- <openejb.version>3.1.4</openejb.version> -->
+		<openejb.version>4.0.0</openejb.version>
 	</properties>
 
 	<modules>
@@ -120,13 +122,19 @@
 			<dependency>
 				<groupId>org.apache.openejb</groupId>
 				<artifactId>openejb-ejbd</artifactId>
-				<version>${openejb-ejbd.version}</version>
+				<version>${openejb.version}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>hsqldb</groupId>
 						<artifactId>hsqldb</artifactId>
 					</exclusion>
 				</exclusions>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.openejb</groupId>
+				<artifactId>openejb-cxf</artifactId>
+				<version>${openejb.version}</version>
 				<scope>test</scope>
 			</dependency>
 			<!-- FEST Fluent Assertions -->
