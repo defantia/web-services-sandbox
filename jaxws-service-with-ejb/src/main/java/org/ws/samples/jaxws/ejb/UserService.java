@@ -1,4 +1,4 @@
-package org.ws.samples.jaxws;
+package org.ws.samples.jaxws.ejb;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 
-@WebService(name = "UserWS", targetNamespace = "http://jaxws.samples.ws.org")
+@WebService(name = "UserWS", targetNamespace = "http://ejb.jaxws.samples.ws.org")
 public interface UserService {
 
 	@WebMethod(operationName = "getUserByName")

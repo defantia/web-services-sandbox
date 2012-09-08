@@ -1,4 +1,4 @@
-package org.ws.samples.jaxws;
+package org.ws.samples.jaxws.ejb;
 
 public class User {
 
