@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.jws.WebService;
 
-@WebService(endpointInterface = "org.ws.samples.jaxws.cxf.UserService")
+@WebService(endpointInterface = "org.ws.samples.jaxws.cxf.UserService", serviceName = "UserWS")
 public class UserServiceImpl implements UserService {
 
 	@Override
