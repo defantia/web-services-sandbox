@@ -26,13 +26,15 @@
 		<ejb.version>3.0</ejb.version>
 		<fest-assert.version>1.4</fest-assert.version>
 		<javaee-api.version>5</javaee-api.version>
+		<jaxws-rt.version>2.2.6-2</jaxws-rt.version>
 		<junit.version>4.10</junit.version>
 		<!-- <openejb.version>3.1.4</openejb.version> -->
 		<openejb.version>4.0.0</openejb.version>
 	</properties>
 
 	<modules>
-		<!-- <module>jaxws-service-with-pojo</module> -->
+		<module>jaxws-service-with-pojo</module>
+		<module>jaxws-service-with-metro</module>
 		<module>jaxws-service-with-ejb</module>
 		<module>jaxws-service-with-cxf</module>
 	</modules>
@@ -97,6 +99,12 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- JAX-WS RT -->
+			<dependency>
+				<groupId>com.sun.xml.ws</groupId>
+				<artifactId>jaxws-rt</artifactId>
+				<version>${jaxws-rt.version}</version>
+			</dependency>
 			<!-- JavaEE -->
 			<dependency>
 				<groupId>javax.ejb</groupId>
