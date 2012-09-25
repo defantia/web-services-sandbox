@@ -20,9 +20,12 @@
 		<maven-clean-plugin.version>2.5</maven-clean-plugin.version>
 		<maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
 		<maven-ejb-plugin.version>2.3</maven-ejb-plugin.version>
+		<maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>
 		<maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
+		<maven-soapui-plugin.version>4.5.1</maven-soapui-plugin.version>
 		<maven-war-plugin.version>2.2</maven-war-plugin.version>
 		<!-- maven dependencies versions -->
+		<derby.version>10.9.1.0</derby.version> 
 		<ejb.version>3.0</ejb.version>
 		<fest-assert.version>1.4</fest-assert.version>
 		<javaee-api.version>5</javaee-api.version>
@@ -47,6 +50,11 @@
 	<build>
 		<pluginManagement>
 			<plugins>
+				<plugin>
+					<groupId>eviware</groupId>
+					<artifactId>maven-soapui-plugin</artifactId>
+					<version>${maven-soapui-plugin.version}</version>
+				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>jaxws-maven-plugin</artifactId>
@@ -81,6 +89,18 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-war-plugin</artifactId>
 					<version>${maven-war-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>maven-jetty-plugin</artifactId>
+					<version>${maven-jetty-plugin.version}</version>
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.derby</groupId>
+							<artifactId>derby</artifactId>
+							<version>${derby.version}</version>
+						</dependency>
+					</dependencies>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -154,5 +174,18 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>soapuiRepository</id>
+			<url>http://www.soapui.org/repository/maven2/</url>
+			<releases>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
