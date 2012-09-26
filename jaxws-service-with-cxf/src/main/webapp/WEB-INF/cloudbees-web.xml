@@ -1,5 +1,5 @@
-<resource name="jdbc/ws-sample" auth="Container" type="javax.sql.DataSource">
+<resource name="jdbc/ws-sample-ds" auth="Container" type="javax.sql.DataSource">
 	<param name="username" value="adefanti" />
 	<param name="password" value="a4efanti" />
-	<param name="url" value="jdbc:cloudbees://ws-sample" />
+	<param name="url" value="jdbc:cloudbees://ws-sample-ds" />
 </resource>

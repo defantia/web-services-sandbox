@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 	<display-name>jaxws-service-with-metro</display-name>
-	
+
 	<listener>
 		<listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
 	</listener>
-	
+
 	<servlet>
 		<servlet-name>jaxws-servlet</servlet-name>
 		<servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
@@ -19,7 +19,7 @@
 	</servlet-mapping>
 
 	<resource-ref>
-		<res-ref-name>jdbc/ws-sample</res-ref-name>
+		<res-ref-name>jdbc/ws-sample-ds</res-ref-name>
 		<res-type>javax.sql.DataSource</res-type>
 		<res-auth>Container</res-auth>
 	</resource-ref>
