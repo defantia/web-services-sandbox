@@ -1,0 +1,11 @@
+<Configure id="webAppCtx" class="org.mortbay.jetty.webapp.WebAppContext">
+	<New id="simulatorDatasource" class="org.mortbay.jetty.plus.naming.Resource">
+		<Arg>jdbc/ws-sample-ds</Arg>
+		<Arg>
+			<New class="org.apache.derby.jdbc.EmbeddedDataSource">
+				<Set name="DatabaseName">test</Set>
+				<Set name="createDatabase">create</Set>
+			</New>
+		</Arg>
+	</New>
+</Configure>
