@@ -1,5 +1,12 @@
-<resource name="jdbc/ws-sample-ds" auth="Container" type="javax.sql.DataSource">
-	<param name="username" value="adefanti" />
-	<param name="password" value="a4efanti" />
-	<param name="url" value="jdbc:cloudbees://ws-sample-ds" />
-</resource>
+<?xml version="1.0"?>
+<cloudbees-web-app xmlns="http://www.cloudbees.com/xml/webapp/1">
+	<!-- Application ID (formatted CB_ACCOUNT/APPNAME) -->
+	<appid>adefanti/jaxws</appid>
+
+	<!-- DataSources (use names refererenced via <resource-ref> in WEB-INF/web.xml) -->
+	<resource name="jdbc/ws-sample-ds" auth="Container" type="javax.sql.DataSource">
+		<param name="username" value="adefanti" />
+		<param name="password" value="a4efanti" />
+		<param name="url" value="jdbc:cloudbees://ws-sample-ds" />
+	</resource>
+</cloudbees-web-app>
