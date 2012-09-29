@@ -7,8 +7,10 @@ import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 
+import org.ws.samples.jaxws.cxf.model.User;
+
 @WebService
-public interface UserService {
+public interface UserWebService {
 
 	@WebMethod(operationName = "getUserByName")
 	@WebResult(name = "getUserResult")

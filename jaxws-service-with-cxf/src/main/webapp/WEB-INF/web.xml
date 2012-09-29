@@ -4,6 +4,14 @@
 	version="2.5">
 	<display-name>jaxws-service-with-cxf</display-name>
 
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>WEB-INF/applicationContext.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
 	<servlet>
 		<servlet-name>CXFServlet</servlet-name>
 		<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
