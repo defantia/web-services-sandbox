@@ -20,7 +20,7 @@
 		<maven-clean-plugin.version>2.5</maven-clean-plugin.version>
 		<maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
 		<maven-ejb-plugin.version>2.3</maven-ejb-plugin.version>
-		<maven-failsafe-plugin.version>2.12.3</maven-failsafe-plugin.version>
+		<maven-failsafe-plugin.version>2.12.4</maven-failsafe-plugin.version>
 		<maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>
 		<maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
 		<maven-soapui-plugin.version>4.5.1</maven-soapui-plugin.version>
@@ -34,6 +34,7 @@
 		<junit.version>4.10</junit.version>
 		<!-- <openejb.version>3.1.4</openejb.version> -->
 		<openejb.version>4.0.0</openejb.version>
+		<slf4j.version>1.7.1</slf4j.version>
 	</properties>
 
 	<modules>
@@ -138,6 +139,23 @@
 				<artifactId>jaxws-rt</artifactId>
 				<version>${jaxws-rt.version}</version>
 			</dependency>
+			<!-- SLF4J -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-simple</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<!-- dependencies with scope provided -->
 			<!-- JavaEE -->
 			<dependency>
 				<groupId>javax.ejb</groupId>
