@@ -17,9 +17,8 @@
 	<properties>
 		<!-- maven dependencies versions -->
 		<cxf.version>2.6.2</cxf.version>
-		<hibernate.version>3.4.0.GA</hibernate.version>
+		<hibernate.version>4.1.7.Final</hibernate.version>
 		<javax.inject.version>1</javax.inject.version>
-		<slf4j.version>1.6.6</slf4j.version>
 		<spring.version>3.1.2.RELEASE</spring.version>
 	</properties>
 
@@ -66,17 +65,14 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>${slf4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
-			<version>${slf4j.version}</version>
 		</dependency>
 		<!-- Spring -->
 		<dependency>
