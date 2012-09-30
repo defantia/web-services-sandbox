@@ -15,8 +15,8 @@ public class UserWebServiceImpl implements UserWebService {
 	private UserService userService;
 
 	@Override
-	public User getUserByName(String name) {
-		return userService.getUserByName(name);
+	public User getUserByLogin(final String login) {
+		return userService.getUserByLogin(login);
 	}
 
 	@Override

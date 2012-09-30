@@ -6,7 +6,9 @@ import org.ws.samples.jaxws.cxf.model.User;
 
 public interface UserService {
 
-	User getUserByName(String name);
+	User save(User user);
+
+	User getUserByLogin(final String login);
 
 	List<User> getUsers();
 }

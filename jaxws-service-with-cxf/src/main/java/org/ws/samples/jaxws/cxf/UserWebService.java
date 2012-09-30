@@ -12,9 +12,9 @@ import org.ws.samples.jaxws.cxf.model.User;
 @WebService
 public interface UserWebService {
 
-	@WebMethod(operationName = "getUserByName")
+	@WebMethod(operationName = "getUserByLogin")
 	@WebResult(name = "getUserResult")
-	User getUserByName(@WebParam(name = "userName") String name);
+	User getUserByLogin(@WebParam(name = "userLogin") final String login);
 
 	@WebMethod(operationName = "getUsers")
 	@WebResult(name = "getUsersResult")
