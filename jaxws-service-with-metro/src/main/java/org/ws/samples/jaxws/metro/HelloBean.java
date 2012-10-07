@@ -1,4 +1,4 @@
-package org.ws.samples.jaxws.pojo;
+package org.ws.samples.jaxws.metro;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
