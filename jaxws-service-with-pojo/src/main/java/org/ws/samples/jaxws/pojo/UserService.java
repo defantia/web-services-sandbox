@@ -1,6 +1,5 @@
 package org.ws.samples.jaxws.pojo;
 
-
 import java.util.List;
 
 import javax.jws.WebMethod;
@@ -8,12 +7,14 @@ import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 
+import org.ws.samples.jaxws.pojo.model.User;
+
 @WebService
 public interface UserService {
 
-	@WebMethod(operationName = "getUserByName")
+	@WebMethod(operationName = "getUserByLogin")
 	@WebResult(name = "getUserResult")
-	User getUserByName(@WebParam(name = "userName") String name);
+	User getUserByLogin(@WebParam(name = "userLogin") final String login);
 
 	@WebMethod(operationName = "getUsers")
 	@WebResult(name = "getUsersResult")
