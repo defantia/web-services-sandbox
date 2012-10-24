@@ -26,7 +26,7 @@
 		<maven-soapui-plugin.version>4.5.1</maven-soapui-plugin.version>
 		<maven-war-plugin.version>2.3</maven-war-plugin.version>
 		<!-- maven dependencies versions -->
-		<cxf.version>2.6.2</cxf.version>
+		<cxf.version>2.7.0</cxf.version>
 		<derby.version>10.9.1.0</derby.version>
 		<ejb.version>3.0</ejb.version>
 		<fest-assert.version>1.4</fest-assert.version>
@@ -36,8 +36,8 @@
 		<jaxws-rt.version>2.2.7</jaxws-rt.version>
 		<junit.version>4.10</junit.version>
 		<!-- <openejb.version>3.1.4</openejb.version> -->
-		<openejb.version>4.0.0</openejb.version>
-		<slf4j.version>1.7.1</slf4j.version>
+		<openejb.version>4.5.0</openejb.version>
+		<slf4j.version>1.7.2</slf4j.version>
 		<spring.version>3.1.2.RELEASE</spring.version>
 	</properties>
 
