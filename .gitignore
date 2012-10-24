@@ -1,6 +1,20 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven Directories #
+target
+
+# Eclipse Files and Directories #
 *.classpath
-*.iml
 *.project
 .settings
-target
+
+# IntelliJ IDEA Files and Directories #
+*.iml
+*.ipr
+*.iws
 /.idea/
