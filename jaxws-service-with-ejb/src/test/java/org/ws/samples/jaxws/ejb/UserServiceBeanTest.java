@@ -16,6 +16,7 @@ import org.junit.Test;
 
 public class UserServiceBeanTest {
 
+    private static InitialContext initialContext;
 	private static UserService userService;
 
 	@BeforeClass
@@ -25,13 +26,12 @@ public class UserServiceBeanTest {
 				"org.apache.openejb.client.LocalInitialContextFactory");
 		properties.setProperty("openejb.embedded.remotable", "true");
 
-		new InitialContext(properties);
+        initialContext = new InitialContext(properties);
 
-		Service service = Service
-				.create(new URL(
-						"http://127.0.0.1:4204/jaxws-service-with-ejb/UserServiceBean?wsdl"),
-						new QName("http://ejb.jaxws.samples.ws.org",
-								"UserService"));
+        URL url = new URL("http://127.0.0.1:4204/jaxws-service-with-ejb/UserServiceBean?wsdl");
+        QName serviceQName = new QName("http://ejb.jaxws.samples.ws.org", "UserService");
+
+		Service service = Service.create(url, serviceQName);
 		userService = service.getPort(UserService.class);
 	}
 
