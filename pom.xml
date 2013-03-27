@@ -24,21 +24,21 @@
 		<maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>
 		<maven-pmd-plugin.version>3.0</maven-pmd-plugin.version>
 		<maven-soapui-plugin.version>4.5.1</maven-soapui-plugin.version>
+        <maven-soapui-extension-plugin.version>4.5.1.3</maven-soapui-extension-plugin.version>
 		<maven-war-plugin.version>2.3</maven-war-plugin.version>
 		<!-- maven dependencies versions -->
 		<cxf.version>2.7.3</cxf.version>
 		<derby.version>10.9.1.0</derby.version>
 		<ejb.version>3.0</ejb.version>
 		<fest-assert.version>1.4</fest-assert.version>
-		<hibernate.version>4.1.10.Final</hibernate.version>
+		<hibernate.version>4.2.0.Final</hibernate.version>
 		<javaee-api.version>5</javaee-api.version>
 		<javax.inject.version>1</javax.inject.version>
 		<jaxws-rt.version>2.2.7</jaxws-rt.version>
 		<junit.version>4.11</junit.version>
-		<!-- <openejb.version>3.1.4</openejb.version> -->
 		<openejb.version>4.5.1</openejb.version>
-		<slf4j.version>1.7.2</slf4j.version>
-		<spring.version>3.2.1.RELEASE</spring.version>
+		<slf4j.version>1.7.4</slf4j.version>
+		<spring.version>3.2.2.RELEASE</spring.version>
 	</properties>
 
 	<modules>
@@ -68,6 +68,11 @@
 					<artifactId>maven-soapui-plugin</artifactId>
 					<version>${maven-soapui-plugin.version}</version>
 				</plugin>
+                <plugin>
+                    <groupId>com.github.redfish4ktc.soapui</groupId>
+                    <artifactId>maven-soapui-extension-plugin</artifactId>
+                    <version>${maven-soapui-extension-plugin.version}</version>
+                </plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>jaxws-maven-plugin</artifactId>
