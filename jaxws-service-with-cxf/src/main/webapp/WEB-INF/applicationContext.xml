@@ -32,4 +32,8 @@
 	<bean id="userWebService" class="org.ws.samples.jaxws.cxf.UserWebServiceImpl" />
 	<jaxws:endpoint id="userWebServiceEndpoint" implementor="#userWebService"
 		address="/UserService" />
+
+	<bean id="helloWebService" class="org.ws.samples.jaxws.cxf.HelloWebServiceImpl" />
+	<jaxws:endpoint id="helloWebServiceEndpoint"
+		implementor="#helloWebService" address="/HelloService" />
 </beans>
