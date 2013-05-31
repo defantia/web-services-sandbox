@@ -34,18 +34,18 @@
 		<maven-surefire-plugin.version>2.14.1</maven-surefire-plugin.version>
 		<maven-war-plugin.version>2.3</maven-war-plugin.version>
 		<!-- maven dependencies versions -->
-		<cxf.version>2.7.4</cxf.version>
-		<derby.version>10.9.1.0</derby.version>
+        <cxf.version>2.7.4</cxf.version>
+        <derby.version>10.10.1.1</derby.version>
 		<ejb.version>3.0</ejb.version>
 		<fest-assert.version>1.4</fest-assert.version>
-		<hibernate.version>4.2.1.Final</hibernate.version>
+		<hibernate.version>4.2.2.Final</hibernate.version>
 		<javaee-api.version>5</javaee-api.version>
 		<javax.inject.version>1</javax.inject.version>
 		<jaxws-rt.version>2.2.7</jaxws-rt.version>
 		<junit.version>4.11</junit.version>
 		<openejb.version>4.5.2</openejb.version>
 		<slf4j.version>1.7.5</slf4j.version>
-		<spring.version>3.2.2.RELEASE</spring.version>
+		<spring.version>3.2.3.RELEASE</spring.version>
 	</properties>
 
 	<prerequisites>
@@ -61,14 +61,14 @@
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/adefanti/web-services-samples/issues</url>
+		<url>https://github.com/adefanti/web-services-sandbox/issues</url>
 	</issueManagement>
 
 	<!-- GitHub SCM -->
 	<scm>
-		<url>https://github.com/adefanti/web-services-samples</url>
-		<connection>scm:git:ssh://git@github.com/adefanti/web-services-samples.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/adefanti/web-services-samples.git</developerConnection>
+		<url>https://github.com/adefanti/web-services-sandbox</url>
+		<connection>scm:git:ssh://git@github.com/adefanti/web-services-sandbox.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/adefanti/web-services-sandbox.git</developerConnection>
 	</scm>
 
 	<build>
