@@ -56,6 +56,12 @@
 			<artifactId>openejb-cxf</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <!-- Woodstox StAX Parser used by Apache CXF -->
+        <dependency>
+            <groupId>org.codehaus.woodstox</groupId>
+            <artifactId>woodstox-core-asl</artifactId>
+            <scope>test</scope>
+        </dependency>
 		<!-- FEST Fluent Assertions -->
 		<dependency>
 			<groupId>org.easytesting</groupId>
