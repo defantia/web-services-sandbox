@@ -36,18 +36,17 @@
 			<artifactId>ejb-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-
-        <!-- SLF4J -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
+                <!-- SLF4J -->
+                <dependency>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-api</artifactId>
+                </dependency>
 
 		<!-- dependencies with scope test -->
-		<!-- JUnit -->
+                <!-- Woodstox StAX Parser used by Apache CXF -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
+			<groupId>org.codehaus.woodstox</groupId>
+			<artifactId>woodstox-core-asl</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<!-- OpenEJB embedded -->
@@ -56,16 +55,16 @@
 			<artifactId>openejb-cxf</artifactId>
 			<scope>test</scope>
 		</dependency>
-        <!-- Woodstox StAX Parser used by Apache CXF -->
-        <dependency>
-            <groupId>org.codehaus.woodstox</groupId>
-            <artifactId>woodstox-core-asl</artifactId>
-            <scope>test</scope>
-        </dependency>
 		<!-- FEST Fluent Assertions -->
 		<dependency>
 			<groupId>org.easytesting</groupId>
 			<artifactId>fest-assert</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
 
