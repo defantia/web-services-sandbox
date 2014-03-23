@@ -33,20 +33,24 @@
 		<maven-soapui-extension-plugin.version>4.6.3.0</maven-soapui-extension-plugin.version>
 		<maven-surefire-plugin.version>2.16</maven-surefire-plugin.version>
 		<maven-war-plugin.version>2.4</maven-war-plugin.version>
+		<soapui-maven-plugin.version>4.6.4</soapui-maven-plugin.version>
+		<!-- propety used by maven-ejb-plugin -->
+                <ejb.version>3.1</ejb.version>
 		<!-- maven dependencies versions -->
+                <assertj.version>1.6.0</assertj.version>
                 <cxf.version>2.7.7</cxf.version>
                 <derby.version>10.10.1.1</derby.version>
-                <ejb.version>3.0</ejb.version>
-                <fest-assert.version>1.4</fest-assert.version>
-                <hibernate.version>4.3.1.Final</hibernate.version>
-                <javaee-api.version>5</javaee-api.version>
+                <assertj.version>1.5.0</assertj.version>
+		<h2.version>1.3.175</h2.version>
+                <hibernate.version>4.3.4.Final</hibernate.version>
+                <javaee-api.version>6.0</javaee-api.version>
                 <javax.inject.version>1</javax.inject.version>
 		<jaxws-rt.version>2.2.8</jaxws-rt.version>
 		<junit.version>4.11</junit.version>
 		<openejb.version>4.6.0</openejb.version>
 		<slf4j.version>1.7.6</slf4j.version>
-		<spring.version>3.2.7.RELEASE</spring.version>
-                <woodstox-core.version>4.2.0</woodstox-core.version>
+		<spring.version>4.0.2.RELEASE</spring.version>
+                <woodstox-core.version>4.2.1</woodstox-core.version>
 	</properties>
 
 	<prerequisites>
@@ -75,23 +79,30 @@
 	<build>
 		<pluginManagement>
 			<plugins>
+<!--
 				<plugin>
 					<groupId>eviware</groupId>
 					<artifactId>maven-soapui-plugin</artifactId>
 					<version>${maven-soapui-plugin.version}</version>
 				</plugin>
+-->
                 		<plugin>
                     			<groupId>com.github.redfish4ktc.soapui</groupId>
                     			<artifactId>maven-soapui-extension-plugin</artifactId>
                     			<version>${maven-soapui-extension-plugin.version}</version>
                 		</plugin>
 				<plugin>
+					<groupId>com.smartbear.soapui</groupId>
+					<artifactId>soapui-maven-plugin</artifactId>
+					<version>${soapui-maven-plugin.version}</version>
+				</plugin>
+				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>jaxws-maven-plugin</artifactId>
 					<version>${jaxws-maven-plugin.version}</version>
 					<dependencies>
 						<dependency>
-							<groupId>javaee</groupId>
+							<groupId>javax</groupId>
 							<artifactId>javaee-api</artifactId>
 							<version>${javaee-api.version}</version>
 						</dependency>
@@ -262,18 +273,18 @@
 				<artifactId>spring-web</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+				<scope>test</scope>
+			</dependency>
 			<!-- dependencies with scope provided -->
 			<!-- JavaEE -->
 			<dependency>
-				<groupId>javaee</groupId>
+				<groupId>javax</groupId>
 				<artifactId>javaee-api</artifactId>
 				<version>${javaee-api.version}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>javax.ejb</groupId>
-				<artifactId>ejb-api</artifactId>
-				<version>${ejb.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<!-- dependencies with scope test -->
@@ -282,6 +293,13 @@
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- H2 -->
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
 				<scope>test</scope>
 			</dependency>
 			<!-- CXF web container -->
@@ -317,11 +335,11 @@
 				<version>${woodstox-core.version}</version>
 				<scope>test</scope>
 			</dependency>
-			<!-- FEST Fluent Assertions -->
+			<!-- AssertJ - Fluent assertions for java -->
 			<dependency>
-				<groupId>org.easytesting</groupId>
-				<artifactId>fest-assert</artifactId>
-				<version>${fest-assert.version}</version>
+				<groupId>org.assertj</groupId>
+				<artifactId>assertj-core</artifactId>
+				<version>${assertj.version}</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
@@ -329,7 +347,7 @@
 
 	<pluginRepositories>
 		<pluginRepository>
-			<id>soapuiRepository</id>
+			<id>smartbear-sweden-plugin-repository</id>
 			<url>http://www.soapui.org/repository/maven2/</url>
 			<releases>
 				<checksumPolicy>warn</checksumPolicy>

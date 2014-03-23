@@ -21,27 +21,20 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ejb-plugin</artifactId>
 			</plugin>
-			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>jaxws-maven-plugin</artifactId> 
-				<executions> <execution> <goals> <goal>wsgen</goal> </goals> <phase>generate-test-resources</phase> 
-				<configuration> <sei>org.ws.samples.jaxws.UserServiceBean</sei> <genWsdl>true</genWsdl> 
-				<resourceDestDir>${basedir}/src/test/generated-sources</resourceDestDir> 
-				</configuration> </execution> </executions> </plugin> -->
 		</plugins>
 	</build>
 
 	<dependencies>
-		<!-- dependencies with scope provided -->
+		<!-- Hibernate -->
 		<dependency>
-			<groupId>javax.ejb</groupId>
-			<artifactId>ejb-api</artifactId>
-			<scope>provided</scope>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
 		</dependency>
                 <!-- SLF4J -->
                 <dependency>
                         <groupId>org.slf4j</groupId>
                         <artifactId>slf4j-api</artifactId>
                 </dependency>
-
 		<!-- dependencies with scope test -->
                 <!-- Woodstox StAX Parser used by Apache CXF -->
 		<dependency>
@@ -53,21 +46,22 @@
 		<dependency>
 			<groupId>org.apache.openejb</groupId>
 			<artifactId>openejb-cxf</artifactId>
-			<scope>test</scope>
 		</dependency>
-		<!-- FEST Fluent Assertions -->
+		<!-- AssertJ - Fluent assertions for java -->
 		<dependency>
-			<groupId>org.easytesting</groupId>
-			<artifactId>fest-assert</artifactId>
-			<scope>test</scope>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
 		</dependency>
 		<!-- JUnit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<scope>test</scope>
 		</dependency>
 
+		<!-- dependencies with scope provided -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+		</dependency>
 	</dependencies>
-
 </project>

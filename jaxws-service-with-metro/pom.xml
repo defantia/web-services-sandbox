@@ -39,8 +39,8 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>eviware</groupId>
-				<artifactId>maven-soapui-plugin</artifactId>
+				<groupId>com.smartbear.soapui</groupId>
+				<artifactId>soapui-maven-plugin</artifactId>
 				<configuration>
 					<projectFile>${basedir}/src/test/resources/jaxws-service-with-metro-jetty-soapui-project.xml</projectFile>
 					<printReport>true</printReport>
