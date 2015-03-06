@@ -17,5 +17,5 @@ target
 *.iml
 *.ipr
 *.iws
-/.idea/
+.idea
 /*.log
