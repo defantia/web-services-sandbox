@@ -45,7 +45,21 @@
 		<!-- OpenEJB embedded -->
 		<dependency>
 			<groupId>org.apache.openejb</groupId>
+			<artifactId>openejb-ejbd</artifactId>
+			<version>${openejb.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>hsqldb</groupId>
+					<artifactId>hsqldb</artifactId>
+				</exclusion>
+			</exclusions>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
 			<artifactId>openejb-cxf</artifactId>
+			<version>${openejb.version}</version>
+			<scope>test</scope>
 		</dependency>
 		<!-- AssertJ - Fluent assertions for java -->
 		<dependency>
