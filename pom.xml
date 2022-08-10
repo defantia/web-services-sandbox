@@ -32,7 +32,7 @@
 		<maven-soapui-extension-plugin.version>4.6.4.2</maven-soapui-extension-plugin.version>
 		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
 		<maven-war-plugin.version>3.0.0</maven-war-plugin.version>
-		<soapui-maven-plugin.version>4.6.4</soapui-maven-plugin.version> <!-- try version 5.1.3 -->
+		<soapui-maven-plugin.version>5.7.0</soapui-maven-plugin.version>
 		<!-- propety used by maven-ejb-plugin -->
 		<ejb.version>3.1</ejb.version>
 		<!-- maven dependencies versions -->
@@ -281,11 +281,8 @@
 
 	<pluginRepositories>
 		<pluginRepository>
-			<id>smartbear-sweden-plugin-repository</id>
+			<id>SmartBearPluginRepository</id>
 			<url>http://www.soapui.org/repository/maven2/</url>
-			<releases>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
 			<snapshots>
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
