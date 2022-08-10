@@ -1,1 +1,1 @@
-# Web Services Samples ![CI Status](https://travis-ci.org/adefanti/web-services-sandbox.svg?branch=main)
+# Web Services Samples ![CI Status](https://github.com/adefanti/web-services-sandbox/actions/workflows/maven.yml/badge.svg)
