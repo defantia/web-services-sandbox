@@ -40,11 +40,11 @@
 		<cxf.version>3.1.7</cxf.version>
 		<derby.version>10.11.1.1</derby.version>
 		<h2.version>1.4.192</h2.version>
-		<hibernate.version>4.3.9.Final</hibernate.version>
+		<hibernate.version>4.3.30.RELEASE</hibernate.version>
 		<javaee-api.version>7.0</javaee-api.version>
 		<javax.inject.version>1</javax.inject.version>
 		<jaxws-rt.version>2.2.10</jaxws-rt.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.2</junit.version>
 		<openejb.version>4.7.4</openejb.version>
 		<slf4j.version>1.7.21</slf4j.version>
 		<spring.version>4.3.2.RELEASE</spring.version>
