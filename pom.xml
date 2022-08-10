@@ -38,7 +38,7 @@
 		<!-- maven dependencies versions -->
 		<assertj.version>2.5.0</assertj.version>
 		<cxf.version>3.1.7</cxf.version>
-		<derby.version>10.11.1.1</derby.version>
+		<derby.version>10.16.1.1</derby.version>
 		<h2.version>2.1.214</h2.version>
 		<hibernate.version>4.3.9.Final</hibernate.version>
 		<javaee-api.version>7.0</javaee-api.version>
