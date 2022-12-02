@@ -283,15 +283,10 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>SmartBearPluginRepository</id>
-			<url>https://www.soapui.org/repository/maven2/</url>
-			<snapshots>
-				<checksumPolicy>warn</checksumPolicy>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
-
+    	<pluginRepositories>
+        	<pluginRepository>
+            		<id>SmartBearPluginRepository</id>
+            		<url>http://www.soapui.org/repository/maven2/</url>
+        	</pluginRepository>
+    	</pluginRepositories>
 </project>
