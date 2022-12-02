@@ -17,7 +17,7 @@
 		<!-- maven plugins versions -->
 		<findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
 		<jaxws-maven-plugin.version>2.4.1</jaxws-maven-plugin.version>
-		<maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
+		<maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
 		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
 		<maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
 		<maven-deploy-plugin.version>3.0.0</maven-deploy-plugin.version>
