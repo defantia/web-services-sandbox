@@ -31,7 +31,7 @@
 		<maven-site-plugin.version>3.12.1</maven-site-plugin.version>
 		<maven-soapui-extension-plugin.version>4.6.4.2</maven-soapui-extension-plugin.version>
 		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
-		<maven-war-plugin.version>3.0.0</maven-war-plugin.version>
+		<maven-war-plugin.version>3.3.2</maven-war-plugin.version>
 		<soapui-maven-plugin.version>4.6.4</soapui-maven-plugin.version>
 		<!-- propety used by maven-ejb-plugin -->
 		<ejb.version>3.1</ejb.version>
