@@ -38,6 +38,7 @@
 					</execution>
 				</executions>
 			</plugin>
+<!--			
 			<plugin>
 				<groupId>com.smartbear.soapui</groupId>
 				<artifactId>soapui-maven-plugin</artifactId>
@@ -55,7 +56,7 @@
 					</execution>
 				</executions>
 			</plugin>
-
+-->
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>maven-jetty-plugin</artifactId>
