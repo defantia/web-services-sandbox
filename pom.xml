@@ -24,7 +24,7 @@
 		<maven-ejb-plugin.version>3.2.1</maven-ejb-plugin.version>
 		<maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
 		<maven-install-plugin.version>3.1.0</maven-install-plugin.version>
-		<maven-jaxb2-plugin.version>0.15.1</maven-jaxb2-plugin.version>
+		<maven-jaxb2-plugin.version>0.15.2</maven-jaxb2-plugin.version>
 		<maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>
 		<maven-pmd-plugin.version>3.0.1</maven-pmd-plugin.version>
 		<maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
