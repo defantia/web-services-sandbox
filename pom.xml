@@ -22,7 +22,7 @@
 		<maven-dependency-plugin.version>3.5.0</maven-dependency-plugin.version>
 		<maven-deploy-plugin.version>3.0.0</maven-deploy-plugin.version>
 		<maven-ejb-plugin.version>3.2.1</maven-ejb-plugin.version>
-		<maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
+		<maven-failsafe-plugin.version>3.0.0</maven-failsafe-plugin.version>
 		<maven-install-plugin.version>3.1.0</maven-install-plugin.version>
 		<maven-jaxb2-plugin.version>0.15.2</maven-jaxb2-plugin.version>
 		<maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>
