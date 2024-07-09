@@ -36,7 +36,7 @@
 		<!-- propety used by maven-ejb-plugin -->
 		<ejb.version>3.1</ejb.version>
 		<!-- maven dependencies versions -->
-		<assertj.version>2.9.1</assertj.version>
+		<assertj.version>3.26.3</assertj.version>
 		<cxf.version>3.5.5</cxf.version>
 		<derby.version>10.17.1.0</derby.version>
 		<h2.version>2.2.220</h2.version>
