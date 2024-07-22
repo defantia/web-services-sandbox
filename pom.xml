@@ -45,7 +45,7 @@
 		<javax.inject.version>1</javax.inject.version>
 		<jaxws-rt.version>4.0.0</jaxws-rt.version>
 		<junit.version>4.13.2</junit.version>
-		<openejb.version>4.7.4</openejb.version>
+		<openejb.version>4.7.5</openejb.version>
 		<slf4j.version>2.0.6</slf4j.version>
 		<spring.version>4.3.30.RELEASE</spring.version>
 		<woodstox-core.version>4.4.1</woodstox-core.version>
